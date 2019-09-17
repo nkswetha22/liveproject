@@ -37,9 +37,10 @@ Feature: AddCustomer flow
     And user clicks on submit button
     Then user should be displayed customer id is generated
 
-    Examples: 
+    Examples:
+       #excel|target/AddCustData.xlsx|sheet=Sheet2| 
       | fname    | lname | mail            | address | phno       |
-      | karthi   | rajan | rajan@gmail.com | chennai | 1234567777 |
-      | soundar  | rajan | sr@gmail.com    | trichy  | 1234567777 |
-      | ajith    | rajan | ar@gmail.com    | madurai | 1234567777 |
-      | vasantha | rajan | vr@gmail.com    | tanjore | 1234567777 |
+    #  | karthi   | rajan | rajan@gmail.com | chennai | 1234567777 |
+     # | soundar  | rajan | sr@gmail.com    | trichy  | 1234567777 |
+     # | ajith    | rajan | ar@gmail.com    | madurai | 1234567777 |
+     # | vasantha | rajan | vr@gmail.com    | tanjore | 1234567777 |

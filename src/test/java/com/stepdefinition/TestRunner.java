@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features="src/test/resources/Features",
                         glue="com.stepdefinition",
-                        plugin="html:target",
+                        plugin= {"html:target","rerun:src/test/resources/failed.txt","json:target/report.json"},
                         dryRun=false,
                         monochrome=true,
                         strict=true,
